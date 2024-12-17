@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 'use client';
 
 import { VCToggleButtonProps } from '@/types/vcToggleButton';
