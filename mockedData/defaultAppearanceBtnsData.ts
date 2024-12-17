@@ -4,32 +4,32 @@ export const daButtonsArr: ButtonData[] = [
   {
     heading: 'Default Button(Size = xs)',
     btnsArr: [
-      { label: 'T Button', width: 'intrinsic', size: 'xs' },
-      { label: 'T Button', width: 'intrinsic', size: 'xs', iconOnly: true },
+      { label: 'Toggle me', width: 'intrinsic', size: 'xs' },
+      { label: 'Toggle me', width: 'intrinsic', size: 'xs', iconOnly: true },
     ],
   },
   {
     heading: 'Default Button(Size = sm)',
     btnsArr: [
-      { label: 'T Button', width: 'intrinsic', size: 'sm' },
-      { label: 'T Button', width: 'intrinsic', size: 'sm', iconOnly: true },
-      { label: 'T Button', width: 'full', size: 'sm' },
+      { label: 'Toggle me', width: 'intrinsic', size: 'sm' },
+      { label: 'Toggle me', width: 'intrinsic', size: 'sm', iconOnly: true },
+      { label: 'Toggle me', width: 'full', size: 'sm' },
     ],
   },
   {
     heading: 'Default Button(Size = md)',
     btnsArr: [
-      { label: 'T Button', width: 'intrinsic' },
-      { label: 'T Button', width: 'intrinsic', iconOnly: true },
-      { label: 'T Button', width: 'full' },
+      { label: 'Toggle me', width: 'intrinsic' },
+      { label: 'Toggle me', width: 'intrinsic', iconOnly: true },
+      { label: 'Toggle me', width: 'full' },
     ],
   },
   {
     heading: 'Default Button(Size = lg)',
     btnsArr: [
-      { label: 'T Button', width: 'intrinsic', size: 'lg' },
-      { label: 'T Button', width: 'intrinsic', iconOnly: true, size: 'lg' },
-      { label: 'T Button', width: 'full', size: 'lg' },
+      { label: 'Toggle me', width: 'intrinsic', size: 'lg' },
+      { label: 'Toggle me', width: 'intrinsic', iconOnly: true, size: 'lg' },
+      { label: 'Toggle me', width: 'full', size: 'lg' },
     ],
   },
 ];

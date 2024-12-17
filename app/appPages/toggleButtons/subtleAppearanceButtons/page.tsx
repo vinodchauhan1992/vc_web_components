@@ -1,6 +1,7 @@
 'use client';
 
 import VCToggleButton from '@/app/components/vcToggleButton/VCToggleButton';
+import { isBtnChecked } from '@/app/utils/CommonUtils';
 import { saButtonsArr } from '@/mockedData/subtleAppearanceBtnsData';
 import { ButtonData } from '@/types/buttonsPage';
 import { VCToggleButtonProps } from '@/types/vcToggleButton';
@@ -32,19 +33,20 @@ const SubtleAppearanceButtons = () => {
         ? `${(subIndex + 1).toString()}. ${btnData.width} width - Icon only`
         : `${(subIndex + 1).toString()}. ${btnData.width} width`;
       const btnID = `${index.toString()}_${subIndex.toString()}`;
+      const isChecked = isBtnChecked({ checkBtnsArr: checkedButtons, buttonID: btnID });
       return (
         <div key={`${subIndex.toString()}`} className="mt-3">
           <div className="card">
             <h6 className="font-bold mb-4 text-500">{header}</h6>
             <VCToggleButton
-              label={btnData.label}
+              label={isChecked ? 'Toggled on' : btnData.label}
               disabled={btnData.disabled}
               width={btnData.width}
               iconOnly={btnData.iconOnly}
               size={btnData.size}
               appearance={btnData?.appearance}
               onClicked={({ checked }) => onBtnClicked({ checked, id: btnID })}
-              checked={checkedButtons.includes(btnID) ? true : false}
+              checked={isChecked}
             />
           </div>
         </div>
