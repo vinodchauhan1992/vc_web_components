@@ -1,6 +1,6 @@
 # vc_web_components
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). The port for local development is `6001`. You can change the port in `scripts` in `package.json`
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). The port for local development is `6001`. You can change the port you want in `scripts` in `package.json`
 
 ## Getting Started
 
