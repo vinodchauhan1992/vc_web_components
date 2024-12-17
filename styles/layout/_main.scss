@@ -27,10 +27,11 @@ a {
 }
 
 .html-transparent-button {
-    // background-color: transparent;
-    // border: none;
+    display: flex;
+    background-color: transparent;
+    border: none;
     padding: 0px;
     cursor: pointer;
-    justify-content: end;
+    justify-content: center;
     box-shadow: none;
 }

@@ -72,7 +72,7 @@ export const buttonsArr: ButtonData[] = [
         iconOnly: true,
         appearance: 'subtle',
       },
-      { label: 'Disabled', disabled: true, width: 'full' },
+      { label: 'Disabled', disabled: true, width: 'full', appearance: 'subtle' },
     ],
   },
   {

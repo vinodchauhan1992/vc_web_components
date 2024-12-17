@@ -18,4 +18,5 @@ export interface VCToggleButtonProps {
   leadingIcon?: boolean;
   trailingIcon?: boolean;
   label?: string;
+  onClicked?: (data: { checked: boolean; }) => void;
 }

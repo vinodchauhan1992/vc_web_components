@@ -17,11 +17,15 @@ const AppMenu = () => {
           to: '/appPages/toggleButtons/disabledButtons',
         },
         {
-          label: 'Default',
+          label: 'Default Appearance',
           icon: 'pi pi-fw pi-home',
-          to: '/appPages/toggleButtons/defaultButtons',
+          to: '/appPages/toggleButtons/defaultAppearanceButtons',
         },
-        { label: 'Subtle', icon: 'pi pi-fw pi-home', to: '/appPages/toggleButtons/subtleButtons' },
+        {
+          label: 'Subtle Appearance',
+          icon: 'pi pi-fw pi-home',
+          to: '/appPages/toggleButtons/subtleAppearanceButtons',
+        },
       ],
     },
   ];

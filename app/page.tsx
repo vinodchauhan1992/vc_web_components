@@ -9,8 +9,11 @@ const Home = () => {
       label: 'Toggle Buttons',
       items: [
         { label: 'Disabled Buttons', route: '/appPages/toggleButtons/disabledButtons' },
-        { label: 'Default Buttons', route: '/appPages/toggleButtons/defaultButtons' },
-        { label: 'Subtle Buttons', route: '/appPages/toggleButtons/subtleButtons' },
+        {
+          label: 'Default Appearance Buttons',
+          route: '/appPages/toggleButtons/defaultAppearanceButtons',
+        },
+        { label: 'Subtle Appearance Buttons', route: '/appPages/toggleButtons/subtleAppearanceButtons' },
       ],
     },
   ];

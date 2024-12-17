@@ -8,20 +8,6 @@
     cursor: pointer;
 }
 
-.disabled-vc-toggle-btn-common {
-    background-color: #091E4208;
-    border: 1px solid #091E420F;
-    border-radius: 1000px;
-    color: #091E424F;
-}
-
-.disabled-subtle-vc-toggle-btn-common {
-    background-color: transparent;
-    border: none;
-    border-radius: 0px;
-    color: #091E424F;
-}
-
 .vc-toggle-xs-label-btn {
     font-size: 12px;
     min-width: 48px;
@@ -113,20 +99,78 @@
     font-size: 16px;
 }
 
-.default-vc-toggle-btn {
-    min-width: 64px;
+.disabled-vc-toggle-btn-common {
+    background-color: #091E4208;
+    border: 1px solid #091E420F;
+    border-radius: 1000px;
+    color: #091E424F;
+}
+
+.disabled-subtle-vc-toggle-btn-common {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    color: #091E424F;
+}
+
+.default-vc-unchecked-toggle-btn-common {
     background-color: #091E420F;
     border: 1px solid #091E4224;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    padding-right: 16px;
-    padding-left: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
     border-radius: 1000px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0.5px;
+    color: #172B4D;
+
+    &:hover {
+        background-color: #091E4224;
+    }
+
+    &:active {
+        background-color: #091E424F;
+    }
+}
+
+.default-vc-checked-toggle-btn-common {
+    background-color: #30384A;
+    border: 1px solid #30384A;
+    border-radius: 1000px;
+    color: #FFFFFF;
+
+    &:hover {
+        background-color: #4B5160;
+    }
+
+    &:active {
+        background-color: #5B626F;
+    }
+}
+
+.subtle-vc-unchecked-toggle-btn-common {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    color: #172B4D;
+
+    &:hover {
+        background-color: #091E420F;
+        border-radius: 1000px;
+    }
+
+    &:active {
+        background-color: #091E4224;
+        border-radius: 1000px;
+    }
+}
+
+.subtle-vc-checked-toggle-btn-common {
+    background-color: #30384A;
+    border: 1px solid #30384A;
+    border-radius: 1000px;
+    color: #FFFFFF;
+
+    &:hover {
+        background-color: #4B5160;
+    }
+
+    &:active {
+        background-color: #5B626F;
+    }
 }
