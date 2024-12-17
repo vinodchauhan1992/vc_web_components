@@ -1,7 +1,7 @@
 const AppFooter = () => {
   return (
     <div className="layout-footer">
-      <span className="font-medium">By VC</span>
+      <span className="font-medium">By Vinod Choudary</span>
     </div>
   );
 };

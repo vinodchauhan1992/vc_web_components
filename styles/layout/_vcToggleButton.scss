@@ -99,11 +99,54 @@
     font-size: 16px;
 }
 
+.vc-toggle-wrapper-trailing-leading-icon {
+    display: flex;
+    align-items: center;
+}
+
+.vc-toggle-label-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vc-toggle-leading-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.vc-toggle-trailing-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+
+.vc-toggle-xs-trailing-leading-icon {
+    font-size: 18px;
+    align-items: center;
+}
+
+.vc-toggle-sm-trailing-leading-icon {
+    font-size: 20px;
+}
+
+.vc-toggle-md-trailing-leading-icon {
+    font-size: 24px;
+}
+
+.vc-toggle-lg-trailing-leading-icon {
+    font-size: 26px;
+}
+
 .disabled-vc-toggle-btn-common {
     background-color: #091E4208;
     border: 1px solid #091E420F;
     border-radius: 1000px;
     color: #091E424F;
+    cursor: default;
 }
 
 .disabled-subtle-vc-toggle-btn-common {
@@ -111,9 +154,10 @@
     border: none;
     border-radius: 0px;
     color: #091E424F;
+    cursor: default;
 }
 
-.default-vc-unchecked-toggle-btn-common {
+.default-unchecked-vc-toggle-btn-common {
     background-color: #091E420F;
     border: 1px solid #091E4224;
     border-radius: 1000px;
@@ -128,7 +172,7 @@
     }
 }
 
-.default-vc-checked-toggle-btn-common {
+.default-checked-vc-toggle-btn-common {
     background-color: #30384A;
     border: 1px solid #30384A;
     border-radius: 1000px;
@@ -143,7 +187,7 @@
     }
 }
 
-.subtle-vc-unchecked-toggle-btn-common {
+.subtle-unchecked-vc-toggle-btn-common {
     background-color: transparent;
     border: none;
     border-radius: 0px;
@@ -160,7 +204,7 @@
     }
 }
 
-.subtle-vc-checked-toggle-btn-common {
+.subtle-checked-vc-toggle-btn-common {
     background-color: #30384A;
     border: 1px solid #30384A;
     border-radius: 1000px;

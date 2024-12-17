@@ -1,19 +1,19 @@
 # vc_web_components
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). The port for local development is `6001`. You can change the port you want in `scripts` in `package.json` file.
+This is a React project with [Next.js](https://nextjs.org) framework bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). [PrimeReact](https://primereact.org/installation/) framework is used for only for providing nice look and implementing menu in less time. The port for local development is `6001`. You can change the port you want in `scripts` in `package.json` file.
 
 ## Getting Started
 
-First, run the development server:
+First, install the packages:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn install
+```
+
+Second, run the development server:
+
+```bash
+yarn run dev
 ```
 
 Open [http://localhost:6001](http://localhost:6001) with your browser to see the result.
@@ -22,17 +22,14 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Typescript
 
-To learn more about Next.js, take a look at the following resources:
+Typescript version@5 is installed. TSConfig is configured to ensure developer will add types in code.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ESLint
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ESLint is configured to ensure the quality of code. ESLint version@9 is installed.
 
-## Deploy on Vercel
+## Production
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Its hosted on Railway [vc_web_components_prod](https://vcwebcomponents-production.up.railway.app/)
