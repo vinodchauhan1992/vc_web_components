@@ -6,14 +6,22 @@ const AppMenu = () => {
   const model: AppMenuItem[] = [
     {
       label: 'Home',
-      items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' }],
+      items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/page' }],
     },
     {
       label: 'Toggle Buttons',
       items: [
-        { label: 'Disabled', icon: 'pi pi-fw pi-home', to: '/pages/toggleButtons/disabledButtons' },
-        { label: 'Default', icon: 'pi pi-fw pi-home', to: '/pages/toggleButtons/defaultButtons' },
-        { label: 'Subtle', icon: 'pi pi-fw pi-home', to: '/pages/toggleButtons/subtleButtons' },
+        {
+          label: 'Disabled',
+          icon: 'pi pi-fw pi-home',
+          to: '/appPages/toggleButtons/disabledButtons',
+        },
+        {
+          label: 'Default',
+          icon: 'pi pi-fw pi-home',
+          to: '/appPages/toggleButtons/defaultButtons',
+        },
+        { label: 'Subtle', icon: 'pi pi-fw pi-home', to: '/appPages/toggleButtons/subtleButtons' },
       ],
     },
   ];

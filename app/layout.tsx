@@ -4,6 +4,7 @@ import 'primeflex/primeflex.css';
 import 'primeicons/primeicons.css';
 import { PrimeReactProvider } from 'primereact/api';
 import 'primereact/resources/primereact.css';
+import { Suspense } from 'react';
 import { LayoutProvider } from '../layout/context/layoutcontext';
 import Layout from '../layout/layout';
 import '../styles/layout/layout.scss';
@@ -21,7 +22,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'VC Components',
   description: 'These are web components developed by VC',
-  viewport: { initialScale: 1, width: 'device-width' },
 };
 
 export default function RootLayout({
@@ -37,7 +37,9 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <PrimeReactProvider>
           <LayoutProvider>
-            <Layout>{children}</Layout>
+            <Suspense>
+              <Layout>{children}</Layout>
+            </Suspense>
           </LayoutProvider>
         </PrimeReactProvider>
       </body>
