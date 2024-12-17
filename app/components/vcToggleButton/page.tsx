@@ -4,16 +4,16 @@ import { VCToggleButtonProps } from '@/types/vcToggleButton';
 
 const VCToggleButton = (props: VCToggleButtonProps) => {
   const {
-    // appearance = 'default',
-    // state = 'default',
+    appearance = 'default',
+    state = 'default',
     size = 'md',
-    // checked = false,
+    checked = false,
     width = 'intrinsic',
     disabled = false,
-    // loading = false,
+    loading = false,
     iconOnly = false,
-    // leadingIcon = false,
-    // trailingIcon = false,
+    leadingIcon = false,
+    trailingIcon = false,
     label = '',
   } = props;
 
