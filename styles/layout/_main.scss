@@ -25,3 +25,12 @@ a {
 .layout-wrapper {
     min-height: 100vh;
 }
+
+.html-transparent-button {
+    // background-color: transparent;
+    // border: none;
+    padding: 0px;
+    cursor: pointer;
+    justify-content: end;
+    box-shadow: none;
+}
