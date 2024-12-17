@@ -4,16 +4,16 @@ import { VCToggleButtonProps } from '@/types/vcToggleButton';
 
 const VCToggleButton = (props: VCToggleButtonProps) => {
   const {
-    appearance = 'default',
-    state = 'default',
+    // appearance = 'default',
+    // state = 'default',
     size = 'md',
-    checked = false,
+    // checked = false,
     width = 'intrinsic',
     disabled = false,
-    loading = false,
+    // loading = false,
     iconOnly = false,
-    leadingIcon = false,
-    trailingIcon = false,
+    // leadingIcon = false,
+    // trailingIcon = false,
     label = '',
   } = props;
 
@@ -39,18 +39,11 @@ const VCToggleButton = (props: VCToggleButtonProps) => {
     if (disabled) {
       return getDisabledBtnClass();
     }
-    if (condition) {
-        
-    }
     return '';
   };
 
   const renderChildren = () => {
-    return iconOnly ? (
-      <i className={`pi pi-image vc-toggle-${size}-icon`} />
-    ) : (
-      <div>{label}</div>
-    );
+    return iconOnly ? <i className={`pi pi-image vc-toggle-${size}-icon`} /> : <div>{label}</div>;
   };
 
   return (
