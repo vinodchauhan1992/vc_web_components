@@ -24,6 +24,9 @@ const DisabledButtons = () => {
                     width={btnData.width}
                     iconOnly={btnData.iconOnly}
                     size={btnData.size}
+                    appearance={btnData?.appearance}
+                    state={btnData?.state}
+                    checked={btnData?.checked}
                   />
                 </div>
               );

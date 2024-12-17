@@ -32,4 +32,62 @@ export const buttonsArr: ButtonData[] = [
       { label: 'Disabled', disabled: true, width: 'full', size: 'lg' },
     ],
   },
+  {
+    heading: 'Subtle Button(Size = xs)',
+    btnsArr: [
+      { label: 'Disabled', disabled: true, width: 'intrinsic', size: 'xs', appearance: 'subtle' },
+      {
+        label: 'Disabled',
+        disabled: true,
+        width: 'intrinsic',
+        size: 'xs',
+        iconOnly: true,
+        appearance: 'subtle',
+      },
+    ],
+  },
+  {
+    heading: 'Subtle Button(Size = sm)',
+    btnsArr: [
+      { label: 'Disabled', disabled: true, width: 'intrinsic', size: 'sm', appearance: 'subtle' },
+      {
+        label: 'Disabled',
+        disabled: true,
+        width: 'intrinsic',
+        size: 'sm',
+        iconOnly: true,
+        appearance: 'subtle',
+      },
+      { label: 'Disabled', disabled: true, width: 'full', size: 'sm', appearance: 'subtle' },
+    ],
+  },
+  {
+    heading: 'Subtle Button(Size = md)',
+    btnsArr: [
+      { label: 'Disabled', disabled: true, width: 'intrinsic', appearance: 'subtle' },
+      {
+        label: 'Disabled',
+        disabled: true,
+        width: 'intrinsic',
+        iconOnly: true,
+        appearance: 'subtle',
+      },
+      { label: 'Disabled', disabled: true, width: 'full' },
+    ],
+  },
+  {
+    heading: 'Subtle Button(Size = lg)',
+    btnsArr: [
+      { label: 'Disabled', disabled: true, width: 'intrinsic', size: 'lg', appearance: 'subtle' },
+      {
+        label: 'Disabled',
+        disabled: true,
+        width: 'intrinsic',
+        iconOnly: true,
+        size: 'lg',
+        appearance: 'subtle',
+      },
+      { label: 'Disabled', disabled: true, width: 'full', size: 'lg', appearance: 'subtle' },
+    ],
+  },
 ];

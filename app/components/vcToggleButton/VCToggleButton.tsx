@@ -4,10 +4,10 @@ import { VCToggleButtonProps } from '@/types/vcToggleButton';
 
 const VCToggleButton = (props: VCToggleButtonProps) => {
   const {
-    // appearance = 'default',
-    // state = 'default',
+    appearance = 'default',
+    state = 'default',
     size = 'md',
-    // checked = false,
+    checked = false,
     width = 'intrinsic',
     disabled = false,
     // loading = false,
@@ -18,7 +18,13 @@ const VCToggleButton = (props: VCToggleButtonProps) => {
   } = props;
 
   const getDisabledBtnClass = () => {
-    let className = 'vc-toggle-btn-common disabled-vc-toggle-btn-common';
+    let className = 'vc-toggle-btn-common';
+    if (appearance === 'default') {
+      className = `${className} disabled-vc-toggle-btn-common`;
+    }
+    if (appearance === 'subtle') {
+      className = `${className} disabled-subtle-vc-toggle-btn-common`;
+    }
     if (width === 'full' && size !== 'xs' && !iconOnly) {
       className = `${className} vc-toggle-full-width-btn`;
     }
