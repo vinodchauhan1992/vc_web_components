@@ -32,7 +32,7 @@ ESLint is configured to ensure the quality of code. ESLint version@9 is installe
 
 ## Production
 
-Its hosted on Railway [vc_web_components_prod](https://vcwebcomponents-production.up.railway.app/)
+Its hosted on Azure as static web app [vc_web_components_prod](https://blue-tree-099ba8910.4.azurestaticapps.net/)
 
 ## Project Demo
 
