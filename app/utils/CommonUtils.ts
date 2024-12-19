@@ -1,12 +1,11 @@
 import { AppMenuItem } from '@/types';
 
-export const isBtnChecked = ({
-  checkBtnsArr,
-  buttonID,
-}: {
+export interface IsBtnCheckedFuncProps {
   checkBtnsArr: string[];
   buttonID: string;
-}) => {
+}
+
+export const isBtnChecked = ({ checkBtnsArr, buttonID }: IsBtnCheckedFuncProps) => {
   return checkBtnsArr.includes(buttonID) ? true : false;
 };
 

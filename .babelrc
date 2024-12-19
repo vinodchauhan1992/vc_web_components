@@ -1,0 +1,31 @@
+{
+  "presets": [
+    [
+      "next/babel",
+      {
+        "preset-env": {},
+        "transform-runtime": {},
+        "styled-jsx": {},
+        "class-properties": {}
+      }
+    ],
+    "@babel/preset-env",
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ],
+    "@babel/preset-flow"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regenerator": true
+      }
+    ],
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-export-default-from"
+  ]
+}

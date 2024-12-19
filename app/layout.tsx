@@ -3,7 +3,7 @@ import 'primeflex/primeflex.css';
 import 'primeicons/primeicons.css';
 import { PrimeReactProvider } from 'primereact/api';
 import 'primereact/resources/primereact.css';
-import { Suspense } from 'react';
+import React, { Suspense } from 'react';
 import { LayoutProvider } from '../layout/context/layoutcontext';
 import Layout from '../layout/layout';
 import '../styles/layout/layout.scss';
