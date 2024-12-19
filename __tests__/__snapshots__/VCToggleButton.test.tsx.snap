@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VCToggleButton component tests renders component 1`] = `
+<div>
+  <div
+    role="toggle_btn_wrapper_div"
+  >
+    <div
+      class="vc-toggle-btn-common default-unchecked-vc-toggle-btn-common vc-toggle-intrinsic-width-btn vc-toggle-md-label-btn"
+      role="toggle_btn_container_div"
+    >
+      <div
+        class="vc-toggle-label-wrapper"
+        role="toggle_btn_label_div"
+      >
+        Toggle me
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VCToggleButton component tests should render label 1`] = `
+<div>
+  <div
+    role="toggle_btn_wrapper_div"
+  >
+    <div
+      class="vc-toggle-btn-common default-checked-vc-toggle-btn-common vc-toggle-intrinsic-width-btn vc-toggle-xs-label-btn"
+      role="toggle_btn_container_div"
+    >
+      <div
+        class="vc-toggle-label-wrapper"
+        role="toggle_btn_label_div"
+      >
+        Toggle me
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VCToggleButton component tests should render toggle button with leading and trailing icon 1`] = `
+<div>
+  <div
+    role="toggle_btn_wrapper_div"
+  >
+    <div
+      class="vc-toggle-btn-common default-checked-vc-toggle-btn-common vc-toggle-intrinsic-width-btn vc-toggle-md-label-btn"
+      role="toggle_btn_container_div"
+    >
+      <div
+        class="vc-toggle-wrapper-trailing-leading-icon"
+        role="toggle_btn_label_icon_wrapper_div"
+      >
+        <div
+          class="vc-toggle-leading-icon-wrapper"
+          role="toggle_btn_leading_icon_div"
+        >
+          <i
+            class="pi pi-angle-down vc-toggle-md-trailing-leading-icon"
+            role="toggle_btn_leading_icon"
+          />
+        </div>
+        <div
+          class="vc-toggle-label-wrapper"
+          role="toggle_btn_label_icon_label_div"
+        >
+          Toggled on
+        </div>
+        <div
+          class="vc-toggle-trailing-icon-wrapper"
+          role="toggle_btn_trailing_icon_div"
+        >
+          <i
+            class="pi pi-angle-down vc-toggle-md-trailing-leading-icon"
+            role="toggle_btn_trailing_icon"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

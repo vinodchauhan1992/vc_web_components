@@ -22,6 +22,108 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Project Structure
+
+All developed Components sits in `app/components` directory. Demo pages to show the demo of components variantions are in `app/demo`,
+
+```bash
+.
+├── README.md
+├── __tests__
+│   ├── VCToggleButton.test.tsx
+│   └── __snapshots__
+│       └── VCToggleButton.test.tsx.snap
+├── app
+│   ├── components
+│   │   └── vcToggleButton
+│   │       └── VCToggleButton.tsx
+│   ├── demo
+│   │   └── toggleButtons
+│   │       ├── defaultAppearanceButtons
+│   │       │   └── page.tsx
+│   │       ├── defaultAppearanceWithIconsButtons
+│   │       │   └── page.tsx
+│   │       ├── disabledButtons
+│   │       │   └── page.tsx
+│   │       ├── subtleAppearanceButtons
+│   │       │   └── page.tsx
+│   │       └── subtleAppearanceWithIconsButtons
+│   │           └── page.tsx
+│   ├── favicon.ico
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── utils
+│       └── CommonUtils.ts
+├── docs
+│   └── assets
+│       └── images
+│           ├── dashboard.png
+│           ├── default_appearance_btns.png
+│           ├── default_appearance_with_icons_btns.png
+│           ├── disabled_btns.png
+│           ├── subtle_appearance_btns.png
+│           └── subtle_appearance_with_icons_btns.png
+├── eslint.config.mjs
+├── jest
+│   └── jest.setup.js
+├── jest.config.js
+├── layout
+│   ├── AppFooter.tsx
+│   ├── AppMenu.tsx
+│   ├── AppMenuitem.tsx
+│   ├── AppSidebar.tsx
+│   ├── AppTopbar.tsx
+│   ├── context
+│   │   ├── layoutcontext.tsx
+│   │   └── menucontext.tsx
+│   └── layout.tsx
+├── mockedData
+│   ├── defaultAppearanceBtnsData.ts
+│   ├── defaultAppearanceWithIconsBtnsData.ts
+│   ├── disabledButtonsData.ts
+│   ├── subtleAppearanceBtnsData.ts
+│   └── subtleAppearanceWithIconsBtnsData.ts
+├── next-env.d.ts
+├── next.config.ts
+├── package.json
+├── public
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── themes
+│   │   └── lara-light-cyan
+│   │       ├── fonts
+│   │       │   ├── Inter-italic.var.woff2
+│   │       │   └── Inter-roman.var.woff2
+│   │       └── theme.css
+│   ├── vercel.svg
+│   └── window.svg
+├── styles
+│   └── layout
+│       ├── _config.scss
+│       ├── _content.scss
+│       ├── _footer.scss
+│       ├── _main.scss
+│       ├── _menu.scss
+│       ├── _mixins.scss
+│       ├── _responsive.scss
+│       ├── _topbar.scss
+│       ├── _typography.scss
+│       ├── _utils.scss
+│       ├── _variables.scss
+│       ├── _vcToggleButton.scss
+│       └── layout.scss
+├── tsconfig.json
+├── types
+│   ├── buttonsPage.d.ts
+│   ├── dashboard.d.ts
+│   ├── index.d.ts
+│   ├── layout.d.ts
+│   └── vcToggleButton.d.ts
+├── yarn-error.log
+└── yarn.lock
+```
+
 ## Typescript
 
 Typescript version@5 is installed. TSConfig is configured to ensure developer will add types in code.
@@ -29,6 +131,22 @@ Typescript version@5 is installed. TSConfig is configured to ensure developer wi
 ## ESLint
 
 ESLint is configured to ensure the quality of code. ESLint version@9 is installed.
+
+## Unit Tests
+
+Unit testcases for testing the developed component are written using `Jest` and `@testing-library`.
+
+For running testcases:
+
+```bash
+yarn run test
+```
+
+One can update the snapshots if there is a change in screen rendering:
+
+```bash
+yarn run test -- -u
+```
 
 ## Production
 

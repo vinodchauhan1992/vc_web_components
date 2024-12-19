@@ -50,3 +50,8 @@ export const getMenuItems = (includeDashboard?: boolean) => {
 
   return menuItemModel;
 };
+
+export const getClassListFromClassName = ({ classNameStr }: { classNameStr: string }) => {
+  const classNamesArr = classNameStr?.split?.(' ');
+  return classNamesArr ? classNamesArr : [];
+};
