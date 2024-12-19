@@ -48,6 +48,17 @@ export const getMenuItems = (includeDashboard?: boolean) => {
     ],
   });
 
+  menuItemModel.push({
+    label: 'Documentation',
+    items: [
+      {
+        label: 'About Project',
+        icon: 'pi pi-fw pi-home',
+        to: '/demo/documentation',
+      },
+    ],
+  });
+
   return menuItemModel;
 };
 

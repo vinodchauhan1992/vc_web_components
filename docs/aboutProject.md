@@ -2,6 +2,10 @@
 
 This is a React project with [Next.js](https://nextjs.org) framework bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). [PrimeReact](https://primereact.org/installation/) framework is used for only for providing nice look and implementing menu in less time. The port for local development is `6001`. You can change the port you want in `scripts` in `package.json` file.
 
+## GitHub Repo Of Project
+
+You can find the project [Here](https://github.com/vinodchauhan1992/vc_web_components). Clone the project using https
+
 ## Getting Started
 
 First, install the packages:
@@ -156,29 +160,3 @@ yarn run test -- -u
 ## Production
 
 Its hosted on Azure as static web app [vc_web_components_prod](https://blue-tree-099ba8910.4.azurestaticapps.net/)
-
-## Project Demo
-
-### 1. Dashboard:
-
-![alt text](docs/assets/images/dashboard.png)
-
-### 2. Disabled Buttons:
-
-<img src="docs/assets/images/disabled_btns.png">
-
-### 3. Default Appearance Of Buttons:
-
-<img src="docs/assets/images/default_appearance_btns.png">
-
-### 4. Default Appearance Of Buttons With Leading & Trailing Icons:
-
-<img src="docs/assets/images/default_appearance_with_icons_btns.png">
-
-### 5. Subtle Appearance Of Buttons:
-
-<img src="docs/assets/images/subtle_appearance_btns.png">
-
-### 6. Subtle Appearance Of Buttons With Leading & Trailing Icons:
-
-<img src="docs/assets/images/subtle_appearance_with_icons_btns.png">
